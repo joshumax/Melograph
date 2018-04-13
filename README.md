@@ -11,7 +11,7 @@ A Melograph client (node) is in charge in indexing and performing tag extraction
 and is capable of requesting a song from another connected node. Other nodes are found using bittorrent trackers and the DHT by looking
 for any peers in the table using a unique shared `infohash` (channel name) listed in the Melograph client configuration.
 
-### Global Music collection
+### Global Music Index
 For nodes that want to search and play music from the distributed collection, a global music index is created from each connected client's
 local database. When a `search` or `list all` request is given to a Melodyne client, it asks all connected nodes for a copy of their database and builds the global collection databse from them. For subsequent calls, it only requests the databases that have been modified.
 
